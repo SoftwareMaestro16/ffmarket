@@ -26,4 +26,29 @@ export const booyahPass: Product[] = [
     },
     prices: { USD: 149, RUB: 149, EUR: 149 },
   },
+  {
+    id: 'zoro-ben-amor',
+    category: 'Booyah Pass',
+    image: '/public/benamor.jpg',
+    isHot: true,
+    translations: {
+      en: { 
+        name: 'Zoro Ben Amor', 
+        description: 'zib zab zaburuburum' 
+      },
+      ru: { 
+        name: 'Зоро Бен Амор', 
+        description: 'зиб заб забурубурум' 
+      },
+      fr: { 
+        name: 'Zoro Ben Amor', 
+        description: 'zib zab zaburuburum' 
+      },
+      ar: { 
+        name: 'زورو بن عمر', 
+        description: 'زيب زاب زابوروبوروم' 
+      },
+    },
+    prices: { USD: 999999999, RUB: 999999999, EUR: 999999999 },
+  },
 ];
