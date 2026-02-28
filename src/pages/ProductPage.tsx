@@ -4,6 +4,7 @@ import { products } from '../data/products';
 import type { Currency, Language } from '../types/store';
 import { formatPrice } from '../utils/price';
 import { MessageCircle, Mail, ArrowLeft, Sparkles, Shield, Clock } from 'lucide-react';
+import { useEffect } from 'react';
 
 type ProductPageProps = {
   language: Language;
@@ -15,6 +16,10 @@ function ProductPage({ language, currency }: ProductPageProps) {
   const { productId } = useParams();
   const navigate = useNavigate();
   const product = products.find((item) => item.id === productId);
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, []);
 
   const getWhatsAppMessage = (): string => {
     if (!product) return '';
