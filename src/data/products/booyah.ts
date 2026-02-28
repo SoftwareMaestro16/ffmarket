@@ -29,7 +29,7 @@ export const booyahPass: Product[] = [
   {
     id: 'zoro-ben-amor',
     category: 'Booyah Pass',
-    image: '/public/benamor.jpg',
+    image: '/benamor.jpg',
     isHot: true,
     translations: {
       en: { 
